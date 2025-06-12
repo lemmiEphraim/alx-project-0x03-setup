@@ -1,4 +1,4 @@
-### components/layouts/Header.tsx
+/* ### components/layouts/Header.tsx */
 
 import Link from "next/link";
 import Button from "../common/Button";
@@ -25,4 +25,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-

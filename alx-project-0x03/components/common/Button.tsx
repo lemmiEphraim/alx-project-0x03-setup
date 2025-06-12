@@ -1,4 +1,4 @@
-## components/common/Button.tsx
+/* ## components/common/Button.tsx */
 
 interface ButtonProps {
   buttonLabel: string

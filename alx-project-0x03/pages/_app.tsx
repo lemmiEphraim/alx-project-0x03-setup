@@ -1,21 +1,11 @@
-export default Footer;
+import type { AppProps } from "next/app";
+import Layout from "../components/layouts/Layout";
+import "../styles/globals.css";
 
-import { ReactNode } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-
-interface LayoutProps {
-  children: ReactNode;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
-};
-
-export default Layout;
+}
